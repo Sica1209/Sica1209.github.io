@@ -1,102 +1,175 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Mis Componentes</title>
-    <meta charset="UTF-8">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <title>Mis Componentes</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2206292665784501"
+     crossorigin="anonymous"></script>
+
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      background-image: url("https://www.xtrafondos.com/wallpapers/estructura-abstracta-3d-gris-oscuro-3593.jpg");
+      background-size: cover;
+      color: white;
+      background-color: black;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      padding: 30px;
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    h2 {
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .componente {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 25px;
+      margin: 30px auto;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
     button {
-  background-color: #eeb03d;
-  color: white;
-  padding: 10px 20px;
-  display: block;
-  margin: auto;
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0; /* Cambiado a 0 para cubrir toda la pantalla */
-  height: 100vh; /* Agregado para ocupar toda la altura */
-  background-image: url("https://www.xtrafondos.com/wallpapers/estructura-abstracta-3d-gris-oscuro-3593.jpg");
- background-color: black;
-  color: rgb(255, 255, 255);
-}
-h1 {
-  color: rgba(255, 0, 0, 0.918);
-  background-color: rgba(255, 0, 0, 0.5);
-  text-align: center;
-  font-size: 50px;
-  padding: 30px;
-  background-image: url("https://www.xtrafondos.com/wallpapers/estructura-abstracta-3d-gris-oscuro-3593.jpg");
-  
-}
-h2 {
-  font-size: 35px;
-  text-align: center;
-  padding: 25px;
-}
-p{
-  font-size: 20px;
-  background-color: rgba(99, 92, 92, 0.308);
-  color: #e0e0e0;
-  
-}
-l{
-  color: white;
-}
-img{
-  border-radius: 15px;
-  display: block;
-  margin: auto;
-}
+      background-color: #eeb03d;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #d99a2c;
+    }
+
+    .estado-uso {
+      color: lightgreen;
+      font-weight: bold;
+    }
+
+    .precio {
+      color: #ffd700;
+      font-weight: bold;
+      font-size: 20px;
+    }
   </style>
+</head>
 
+<body>
 
+<h1><u>Mis Componentes</u></h1>
+<h2>Página de práctica en HTML</h2>
 
+<div class="container">
 
+  <!-- CPU -->
+  <div class="componente">
+    <p><strong>AMD Ryzen 5 4600G</strong></p>
 
+    <p>
+      6 núcleos / 12 hilos<br>
+      3.7 GHz base / 4.2 GHz turbo<br>
+      Gráficos Radeon Vega
+    </p>
 
-<h1>
-  <i>
-    <u>
-    <l>Mis</l> componentes
-  </u>
-  </i>
-</h1>
-<br>
-<h2>Esta página muestra mis componentes y su precio. Es más que nada para practicar htlm</h2>
-<p>Componente 1: AMD Ryzen 5 4600G with Radeon Graphics (3.70 GHz)</p>
-<img src="https://http2.mlstatic.com/D_NQ_NP_2X_625019-MLA92411348192_092025-F.webp" width="300" height="300"/><br><br>
+   
 
-<a href="https://www.mercadolibre.com.ar/microprocesador-pc-amd-ryzen-5-4600g-8mb-37ghz-am4/p/MLA19470792#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=b13adc57-b15b-45f9-bbb2-e1ea89933ea4&wid=MLA1148564642&sid=search" target="_blank">
-  <button
-   onclick="alert('Redirigiendo a mercadolibre...')">Ir a Mercadolibre
-  </button>
-</a>
-<br><br>
-<script>
-function cargar() {
-  fetch("index.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("contenido").innerHTML = html;
-    });
-}
-</script>
+    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_625019-MLA92411348192_092025-F.webp" width="300">
 
-<p>Componente 2: Motherboard Asus Prime A320m-k Am4 Ddr4 Usb 3.0 Hdmi A320</p>
-<img src="https://http2.mlstatic.com/D_NQ_NP_2X_690393-MLA91928822221_092025-F.webp" alt="Motherboard" width="300" height="300">
+    <a href="https://www.mercadolibre.com.ar/microprocesador-pc-amd-ryzen-5-4600g-8mb-37ghz-am4/p/MLA19470792"
+       target="_blank">
+      <button onclick="alert('Redirigiendo a MercadoLibre...')">
+        Ver precio actual
+      </button>
+    </a>
+  </div>
 
+  <!-- Motherboard -->
+  <div class="componente">
+    <p><strong>Asus Prime A320M-K</strong></p>
 
+    <p>
+      Socket AM4<br>
+      DDR4<br>
+      USB 3.0 / HDMI
+    </p>
 
+    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_690393-MLA91928822221_092025-F.webp" width="300">
 
+    <a href="https://www.mercadolibre.com.ar/"
+       target="_blank">
+      <button>
+        Ver precio actual
+      </button>
+    </a>
+  </div>
 
+  <!-- Memoria RAM -->
+  <div class="componente">
+    <p><strong>Team DDR4 16GB (2x8GB) 3200MHz T-Force Vulcan Z Grey CL16</strong></p>
 
+    <p>
+      16GB (2x8GB)<br>
+      3200MHz<br>
+      CL16<br>
+      T-Force Vulcan Z Grey
+    </p>
 
+    <img src="https://www.teamgroupinc.com/upload/product/2023/202305/20230515165948_1.jpg" width="300">
 
+    <a href="https://www.mercadolibre.com.ar/memoria-ram-t-force-vulcan-z-gamer-color-gray-16gb-2-team-group-tlzgd416g3200hc16cdc01/p/MLA15798060"
+       target="_blank">
+      <button>
+        Ver precio actual
+      </button>
+    </a>
+  </div>
 
+  <!-- Contacto -->
+  <div class="componente">
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta o quieres más información, contáctame:</p>
+    <p>Email: tuemail@example.com</p>
+    <form action="https://formspree.io/f/xnjjjkwg" method="post">
+      <label for="name">Nombre:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Mensaje:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 
-
-
+</div>
 
 </body>
 </html>
