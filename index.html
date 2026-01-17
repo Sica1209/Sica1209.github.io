@@ -9,6 +9,8 @@
   background-color: #eeb03d;
   color: white;
   padding: 10px 20px;
+  display: block;
+  margin: auto;
 }
 body {
   font-family: Arial, sans-serif;
@@ -34,6 +36,8 @@ h2 {
 }
 p{
   font-size: 20px;
+  background-color: rgba(99, 92, 92, 0.308);
+  color: #e0e0e0;
   
 }
 l{
@@ -41,7 +45,8 @@ l{
 }
 img{
   border-radius: 15px;
-  text-align: center;
+  display: block;
+  margin: auto;
 }
   </style>
 
@@ -67,11 +72,7 @@ img{
    onclick="alert('Redirigiendo a mercadolibre...')">Ir a Mercadolibre
   </button>
 </a>
-
-<button onclick="cargar()">Ver componentes</button>
-
-<div id="contenido"></div>
-
+<br><br>
 <script>
 function cargar() {
   fetch("index.html")
@@ -83,6 +84,7 @@ function cargar() {
 </script>
 
 <p>Componente 2: Motherboard Asus Prime A320m-k Am4 Ddr4 Usb 3.0 Hdmi A320</p>
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_690393-MLA91928822221_092025-F.webp" alt="Motherboard" width="300" height="300">
 
 
 
