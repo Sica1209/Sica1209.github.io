@@ -1,15 +1,99 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
+    <title>Mis Componentes</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bienvenido a mi página personal — aquí comparto proyectos y contacto.">
-    <title>Mi página — Sica1209</title>
 </head>
 <body>
-    <h1>Mi Pagina Personal</h1>
-    <h2>Esta sera mi pagina personal con github pages</h2>
-    <p>Estoy probando cosas</p>
-    
+  <style>
+    button {
+  background-color: #eeb03d;
+  color: white;
+  padding: 10px 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Cambiado a 0 para cubrir toda la pantalla */
+  height: 100vh; /* Agregado para ocupar toda la altura */
+  background-image: url("https://www.xtrafondos.com/wallpapers/estructura-abstracta-3d-gris-oscuro-3593.jpg");
+ 
+  color: rgb(255, 255, 255);
+}
+h1 {
+  color: rgba(255, 0, 0, 0.918);
+  background-color: rgba(255, 0, 0, 0.5);
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/657/191/small/golden-luxury-background-vector.jpg);
+}
+h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 25px;
+}
+p{
+  font-size: 20px;
+  
+}
+l{
+  color: white;
+}
+img{
+  border-radius: 15px;
+  text-align: center;
+}
+  </style>
+
+
+
+
+
+
+<h1>
+  <i>
+    <u>
+    <l>Mis</l> componentes
+  </u>
+  </i>
+</h1>
+<br>
+<h2>Esta página muestra mis componentes y su precio. Es más que nada para practicar htlm</h2>
+<p>Componente 1: AMD Ryzen 5 4600G with Radeon Graphics (3.70 GHz)</p>
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_625019-MLA92411348192_092025-F.webp" width="300" height="300"/>
+
+<a href="https://www.mercadolibre.com.ar/microprocesador-pc-amd-ryzen-5-4600g-8mb-37ghz-am4/p/MLA19470792#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=b13adc57-b15b-45f9-bbb2-e1ea89933ea4&wid=MLA1148564642&sid=search" target="_blank">
+  <button
+   onclick="alert('Redirigiendo a mercadolibre...')">Ir a Mercadolibre
+  </button>
+</a>
+
+<button onclick="cargar()">Ver componentes</button>
+
+<div id="contenido"></div>
+
+<script>
+function cargar() {
+  fetch("index.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contenido").innerHTML = html;
+    });
+}
+</script>
+
+<p>Componente 2: Motherboard Asus Prime A320m-k Am4 Ddr4 Usb 3.0 Hdmi A320</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
