@@ -1,1 +1,1 @@
-Personal Page
+Personal page to share the components of my pc
